@@ -1,6 +1,6 @@
 # local-elections-2015-scraper
 
-Ukranian local elections 2015. Candidates, councils and counties.
+Ukranian local elections 2015. Parties and results. 
 
 ## Copyright
 
@@ -11,10 +11,12 @@ All data was scraped from [ІАС "Місцеві вибори"](http://cvk.gov.
 1. Install scrapy. See instructions on [official scrapy website](http://scrapy.org/). Install version 1.x
 2. Clone or download this repository.
 
-## How to run
+## How to run 
 
-    scrapy crawl mayors
+    scrapy crawl municipal
 
-## Results
+## To get csv data 
 
-See `data/` directory.
+scrapy crawl municipal -o municipal-2015.csv -t csv
+
+
